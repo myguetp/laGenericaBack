@@ -9,57 +9,59 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class VentasDTO {
 
 	@Id
-	private Integer codigoventa;
-	private Integer cedulacliente;
-	private Double valorventa;
-	private Double ivaventa;
-	private Double totalventa;
-	private ArrayList<String> detalleventa;
-	public VentasDTO(Integer codigoventa, Integer cedulacliente, Double valorventa, Double ivaventa, Double totalventa,
-			ArrayList<String> detalleventa) {
-		this.codigoventa = codigoventa;
-		this.cedulacliente = cedulacliente;
-		this.valorventa = valorventa;
-		this.ivaventa = ivaventa;
-		this.totalventa = totalventa;
-		this.detalleventa = detalleventa;
-	}
-	public Integer getCodigoventa() {
-		return codigoventa;
-	}
-	public void setCodigoventa(Integer codigoventa) {
-		this.codigoventa = codigoventa;
-	}
-	public Integer getCedulacliente() {
-		return cedulacliente;
-	}
-	public void setCedulacliente(Integer cedulacliente) {
-		this.cedulacliente = cedulacliente;
-	}
-	public Double getValorventa() {
-		return valorventa;
-	}
-	public void setValorventa(Double valorventa) {
-		this.valorventa = valorventa;
-	}
-	public Double getIvaventa() {
-		return ivaventa;
-	}
-	public void setIvaventa(Double ivaventa) {
-		this.ivaventa = ivaventa;
-	}
-	public Double getTotalventa() {
-		return totalventa;
-	}
-	public void setTotalventa(Double totalventa) {
-		this.totalventa = totalventa;
-	}
-	public ArrayList<String> getDetalleventa() {
-		return detalleventa;
-	}
-	public void setDetalleventa(ArrayList<String> detalleventa) {
-		this.detalleventa = detalleventa;
+	private Integer codigo_venta;
+	private Integer cedula_cliente;
+	private Double valor_venta;
+	private Double iva_venta;
+	private Double total_venta;
+	private ArrayList<DetalleVentasDTO> detalle_venta;
+
+	public Integer getCodigo_venta() {
+		return codigo_venta;
 	}
 
+	public void setCodigo_venta(Integer codigo_venta) {
+		this.codigo_venta = codigo_venta;
+	}
+
+	public Integer getCedula_cliente() {
+		return cedula_cliente;
+	}
+
+	public void setCedula_cliente(Integer cedula_cliente) {
+		this.cedula_cliente = cedula_cliente;
+	}
+
+	public Double getValor_venta() {
+		return valor_venta;
+	}
+
+	public void setValor_venta(Double valor_venta) {
+		this.valor_venta = valor_venta;
+	}
+
+	public Double getIva_venta() {
+		return iva_venta;
+	}
+
+	public void setIva_venta(Double iva_venta) {
+		this.iva_venta = iva_venta;
+	}
+
+	public Double getTotal_venta() {
+		return total_venta;
+	}
+
+	public void setTotal_venta(Double total_venta) {
+		this.total_venta = total_venta;
+	}
+
+	public ArrayList<DetalleVentasDTO> getDetalle_venta() {
+		return detalle_venta;
+	}
+
+	public void setDetalle_venta(ArrayList<DetalleVentasDTO> detalle_venta) {
+		this.detalle_venta = detalle_venta;
+	}
 
 }
